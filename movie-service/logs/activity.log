@@ -1,0 +1,1181 @@
+Thu 01:20:17 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 22740 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:20:17 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:20:17 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:20:20 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:20:20 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 594 ms. Found 1 JPA repository interfaces.
+Thu 01:20:21 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:20:23 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:20:23 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:20:23 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:20:23 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:20:24 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:20:24 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:20:24 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6630 ms
+Thu 01:20:24 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:20:25 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:20:25 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:20:26 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:20:26 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:20:27 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:20:28 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:20:30 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:20:30 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:20:31 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:20:34 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:20:34 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:20:34 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:20:34 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:20:34 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:20:34 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:20:34 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:24:13 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 38572 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:24:13 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:24:13 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:24:15 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:24:15 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 475 ms. Found 1 JPA repository interfaces.
+Thu 01:24:16 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:24:18 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:24:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:24:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:24:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:24:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:24:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:24:19 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6113 ms
+Thu 01:24:19 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:24:20 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:24:20 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:24:20 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:24:20 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:24:21 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:24:21 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:24:23 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:24:23 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:24:24 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:24:27 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:24:27 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:24:27 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:24:27 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:24:27 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:24:27 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:24:27 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:25:01 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 40748 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:25:01 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:25:01 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:25:04 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:25:04 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 450 ms. Found 1 JPA repository interfaces.
+Thu 01:25:05 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:25:07 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:25:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:25:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:25:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:25:08 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:25:08 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:25:08 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6187 ms
+Thu 01:25:08 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:25:09 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:25:09 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:25:09 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:25:09 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:25:10 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:25:10 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:25:12 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:25:12 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:25:13 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:25:15 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:25:15 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:25:15 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:25:15 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:25:15 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:25:15 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:25:16 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:28:54 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 37456 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:28:54 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:28:54 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:28:56 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:28:57 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 442 ms. Found 1 JPA repository interfaces.
+Thu 01:28:57 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:28:59 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:28:59 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:28:59 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:28:59 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:29:00 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:29:00 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:29:00 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6097 ms
+Thu 01:29:00 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:29:01 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:29:01 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:29:02 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:29:02 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:29:03 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:29:03 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:29:05 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:29:05 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:29:06 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:29:08 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:29:08 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:29:08 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:29:08 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:29:08 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:29:08 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:29:08 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:33:14 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 23216 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:33:14 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:33:14 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:33:16 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:33:17 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 460 ms. Found 1 JPA repository interfaces.
+Thu 01:33:17 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:33:19 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:33:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:33:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:33:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:33:20 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:33:20 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:33:20 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6062 ms
+Thu 01:33:20 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:33:21 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:33:21 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:33:22 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:33:22 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:33:22 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:33:23 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:33:25 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:33:25 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:33:26 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:33:29 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:33:29 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:33:29 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:33:29 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:33:29 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:33:29 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:33:29 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:34:38 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 37404 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:34:38 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:34:38 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:34:40 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:34:40 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 451 ms. Found 1 JPA repository interfaces.
+Thu 01:34:41 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:34:43 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:34:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:34:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:34:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:34:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:34:44 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:34:44 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5871 ms
+Thu 01:34:44 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:34:44 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:34:45 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:34:45 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:34:45 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:34:46 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:34:46 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:34:48 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:34:48 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:34:49 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:34:51 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:34:51 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:34:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:34:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:34:51 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:34:51 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:34:51 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:40:01 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 40260 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:40:01 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:40:01 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:40:04 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:40:04 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 479 ms. Found 1 JPA repository interfaces.
+Thu 01:40:05 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:40:06 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:40:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:40:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:40:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:40:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:40:07 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:40:07 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 6159 ms
+Thu 01:40:08 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:40:08 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:40:08 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:40:09 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:40:09 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:40:10 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:40:10 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:40:12 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:40:12 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:40:13 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:40:15 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:40:15 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:40:15 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:40:15 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:40:15 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:40:15 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:40:15 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:44:07 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 40688 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:44:07 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:44:07 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:44:09 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:44:10 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 440 ms. Found 1 JPA repository interfaces.
+Thu 01:44:10 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:44:12 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:44:12 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:44:12 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:44:12 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:44:13 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:44:13 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:44:13 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5850 ms
+Thu 01:44:13 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:44:14 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:44:14 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:44:14 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:44:14 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:44:15 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:44:15 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:44:17 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:44:17 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:44:18 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:44:20 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser)  [42122-200]
+Thu 01:44:20 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:44:20 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:44:20 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:44:20 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:44:20 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:44:20 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxoffice,active,dateoflaunch,genre,hasteaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:46:36 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 22820 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:46:36 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:46:36 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:46:38 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:46:39 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 498 ms. Found 1 JPA repository interfaces.
+Thu 01:46:40 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:46:42 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:46:42 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:46:42 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:46:42 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:46:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:46:43 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:46:43 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 7573 ms
+Thu 01:46:44 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:46:45 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:46:45 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:46:46 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:46:46 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:46:46 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:46:47 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:46:48 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:46:48 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:46:49 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:46:51 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+Thu 01:46:51 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:46:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:46:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:46:51 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:46:51 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:46:51 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser) ; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "BOXOFFICE" not found; SQL statement:
+insert into movie(id,title,boxOffice,active,dateOfLaunch,genre,hasTeaser)  [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:49:13 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 21700 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:49:13 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:49:13 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:49:15 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:49:15 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 446 ms. Found 1 JPA repository interfaces.
+Thu 01:49:16 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:49:18 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:49:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:49:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:49:18 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:49:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:49:19 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:49:19 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5887 ms
+Thu 01:49:19 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:49:20 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:49:20 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:49:20 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:49:20 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:49:21 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:49:21 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:49:23 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:49:23 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:49:24 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:49:26 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DATEOFLAUNCH" not found; SQL statement:
+insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true) [42122-200]
+Thu 01:49:26 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:49:26 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 01:49:26 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 01:49:26 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 01:49:26 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 01:49:26 10/02/2022 [main] [ERROR] [SpringApplication.java] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DATEOFLAUNCH" not found; SQL statement:
+insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true) [42122-200]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.cts.moviecruiser.movie.MovieCruiserApplication.main(MovieCruiserApplication.java:16)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/2068866/eclipse-workspace/Microservice-final%20check/movie-service/target/classes/data.sql]: insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DATEOFLAUNCH" not found; SQL statement:
+insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true) [42122-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DATEOFLAUNCH" not found; SQL statement:
+insert into movie(id,title,box_office,active,dateOfLaunch,genre,hasTeaser) values(1,'Godha','3Cr',true,'2017-03-15','Action',true), (2,'Queen','5Cr',true,'2017-12-23','Adventure',false), (3,'Nizhal','4Cr',true,'2018-08-21','Adventure',false), (4,'Hridayam','6Cr',false,'2017-07-02','Romance',true), (5,'Superman','63Cr',true,'2022-11-02','Comedy',true) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+Thu 01:50:05 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 16740 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:50:05 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:50:05 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:50:07 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:50:07 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 439 ms. Found 1 JPA repository interfaces.
+Thu 01:50:08 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:50:10 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:50:10 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:50:10 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:50:10 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:50:11 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:50:11 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:50:11 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5847 ms
+Thu 01:50:11 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:50:12 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:50:12 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:50:12 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:50:12 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:50:13 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:50:13 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:50:15 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:50:15 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:50:16 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClientOptionalArgsConfiguration.java] - Eureka HTTP Client uses RestTemplate.
+Thu 01:50:19 10/02/2022 [main] [ WARN] [LoadBalancerCacheAutoConfiguration.java] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+Thu 01:50:19 10/02/2022 [main] [ INFO] [EndpointLinksResolver.java] - Exposing 1 endpoint(s) beneath base path '/actuator'
+Thu 01:50:19 10/02/2022 [main] [ INFO] [InstanceInfoFactory.java] - Setting initial instance status as: STARTING
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Initializing Eureka in region us-east-1
+Thu 01:50:19 10/02/2022 [main] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Disable delta property : false
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Single vip registry refresh property : null
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Force full registry fetch : false
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application is null : false
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Registered Applications size is zero : true
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application version is -1: true
+Thu 01:50:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Getting all instance registry info from the eureka server
+Thu 01:50:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - The response status is 200
+Thu 01:50:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Starting heartbeat executor: renew interval is: 30
+Thu 01:50:21 10/02/2022 [main] [ INFO] [InstanceInfoReplicator.java] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+Thu 01:50:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Discovery Client initialized at timestamp 1644438021444 with initial instances count: 2
+Thu 01:50:21 10/02/2022 [main] [ INFO] [EurekaServiceRegistry.java] - Registering application MOVIE-SERVICE with eureka with status UP
+Thu 01:50:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Saw local status change event StatusChangeEvent [timestamp=1644438021452, current=UP, previous=STARTING]
+Thu 01:50:21 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090: registering service...
+Thu 01:50:21 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting ProtocolHandler ["http-nio-8090"]
+Thu 01:50:21 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat started on port(s): 8090 (http) with context path ''
+Thu 01:50:21 10/02/2022 [main] [ INFO] [EurekaAutoServiceRegistration.java] - Updating port to 8090
+Thu 01:50:21 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090 - registration status: 204
+Thu 01:50:22 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Started MovieCruiserApplication in 19.085 seconds (JVM running for 20.675)
+Thu 01:52:48 10/02/2022 [http-nio-8090-exec-4] [ INFO] [DirectJDKLog.java] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+Thu 01:52:48 10/02/2022 [http-nio-8090-exec-4] [ INFO] [FrameworkServlet.java] - Initializing Servlet 'dispatcherServlet'
+Thu 01:52:48 10/02/2022 [http-nio-8090-exec-4] [ INFO] [FrameworkServlet.java] - Completed initialization in 2 ms
+Thu 01:52:48 10/02/2022 [http-nio-8090-exec-4] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 01:52:48 10/02/2022 [http-nio-8090-exec-4] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 01:53:06 10/02/2022 [http-nio-8090-exec-10] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 01:53:06 10/02/2022 [http-nio-8090-exec-10] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 01:53:21 10/02/2022 [http-nio-8090-exec-5] [ INFO] [MovieController.java] - Start: Inside getMovie
+Thu 01:53:21 10/02/2022 [http-nio-8090-exec-5] [ INFO] [MovieController.java] - End:  getMovie
+Thu 01:55:19 10/02/2022 [http-nio-8090-exec-8] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 01:55:19 10/02/2022 [http-nio-8090-exec-8] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 01:55:19 10/02/2022 [AsyncResolver-bootstrap-executor-0] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 01:55:44 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - Start: Inside modifyMovie
+Thu 01:55:44 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - End:  modifyMovie
+Thu 01:55:51 10/02/2022 [http-nio-8090-exec-7] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 01:55:51 10/02/2022 [http-nio-8090-exec-7] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 01:59:44 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 7236 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 01:59:44 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 01:59:44 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 01:59:47 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 01:59:47 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 473 ms. Found 1 JPA repository interfaces.
+Thu 01:59:48 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 01:59:49 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 01:59:49 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 01:59:49 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 01:59:49 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 01:59:50 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 01:59:50 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 01:59:50 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5829 ms
+Thu 01:59:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 01:59:51 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 01:59:51 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 01:59:52 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 01:59:52 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 01:59:52 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 01:59:53 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 01:59:55 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 01:59:55 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 01:59:56 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 01:59:59 10/02/2022 [main] [ INFO] [DiscoveryClientOptionalArgsConfiguration.java] - Eureka HTTP Client uses RestTemplate.
+Thu 01:59:59 10/02/2022 [main] [ WARN] [LoadBalancerCacheAutoConfiguration.java] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+Thu 01:59:59 10/02/2022 [main] [ INFO] [EndpointLinksResolver.java] - Exposing 1 endpoint(s) beneath base path '/actuator'
+Thu 01:59:59 10/02/2022 [main] [ INFO] [InstanceInfoFactory.java] - Setting initial instance status as: STARTING
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Initializing Eureka in region us-east-1
+Thu 02:00:00 10/02/2022 [main] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Disable delta property : false
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Single vip registry refresh property : null
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Force full registry fetch : false
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application is null : false
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Registered Applications size is zero : true
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application version is -1: true
+Thu 02:00:00 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Getting all instance registry info from the eureka server
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - The response status is 200
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Starting heartbeat executor: renew interval is: 30
+Thu 02:00:01 10/02/2022 [main] [ INFO] [InstanceInfoReplicator.java] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Discovery Client initialized at timestamp 1644438601908 with initial instances count: 3
+Thu 02:00:01 10/02/2022 [main] [ INFO] [EurekaServiceRegistry.java] - Registering application MOVIE-SERVICE with eureka with status UP
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Saw local status change event StatusChangeEvent [timestamp=1644438601914, current=UP, previous=STARTING]
+Thu 02:00:01 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090: registering service...
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting ProtocolHandler ["http-nio-8090"]
+Thu 02:00:01 10/02/2022 [main] [ WARN] [AbstractApplicationContext.java] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+Thu 02:00:01 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Closing JPA EntityManagerFactory for persistence unit 'default'
+Thu 02:00:01 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown initiated...
+Thu 02:00:01 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Shutdown completed.
+Thu 02:00:01 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Shutting down DiscoveryClient ...
+Thu 02:00:02 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090 - registration status: 204
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Unregistering ...
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090 - deregister  status: 200
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Completed shut down of DiscoveryClient
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Pausing ProtocolHandler ["http-nio-8090"]
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping service [Tomcat]
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Stopping ProtocolHandler ["http-nio-8090"]
+Thu 02:00:02 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Destroying ProtocolHandler ["http-nio-8090"]
+Thu 02:00:02 10/02/2022 [main] [ INFO] [ConditionEvaluationReportLoggingListener.java] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+Thu 02:00:02 10/02/2022 [main] [ERROR] [LoggingFailureAnalysisReporter.java] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+Thu 02:02:17 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 25204 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 02:02:17 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 02:02:17 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 02:02:19 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 02:02:20 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 394 ms. Found 1 JPA repository interfaces.
+Thu 02:02:20 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 02:02:22 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 02:02:22 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 02:02:22 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 02:02:22 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 02:02:23 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 02:02:23 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 02:02:23 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5745 ms
+Thu 02:02:23 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 02:02:24 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 02:02:24 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 02:02:24 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 02:02:24 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 02:02:25 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 02:02:25 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 02:02:27 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 02:02:27 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 02:02:28 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClientOptionalArgsConfiguration.java] - Eureka HTTP Client uses RestTemplate.
+Thu 02:02:31 10/02/2022 [main] [ WARN] [LoadBalancerCacheAutoConfiguration.java] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+Thu 02:02:31 10/02/2022 [main] [ INFO] [EndpointLinksResolver.java] - Exposing 1 endpoint(s) beneath base path '/actuator'
+Thu 02:02:31 10/02/2022 [main] [ INFO] [InstanceInfoFactory.java] - Setting initial instance status as: STARTING
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Initializing Eureka in region us-east-1
+Thu 02:02:31 10/02/2022 [main] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Disable delta property : false
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Single vip registry refresh property : null
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Force full registry fetch : false
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application is null : false
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Registered Applications size is zero : true
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application version is -1: true
+Thu 02:02:31 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Getting all instance registry info from the eureka server
+Thu 02:02:33 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - The response status is 200
+Thu 02:02:33 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Starting heartbeat executor: renew interval is: 30
+Thu 02:02:33 10/02/2022 [main] [ INFO] [InstanceInfoReplicator.java] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+Thu 02:02:33 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Discovery Client initialized at timestamp 1644438753391 with initial instances count: 1
+Thu 02:02:33 10/02/2022 [main] [ INFO] [EurekaServiceRegistry.java] - Registering application MOVIE-SERVICE with eureka with status UP
+Thu 02:02:33 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Saw local status change event StatusChangeEvent [timestamp=1644438753397, current=UP, previous=STARTING]
+Thu 02:02:33 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090: registering service...
+Thu 02:02:33 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting ProtocolHandler ["http-nio-8090"]
+Thu 02:02:33 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat started on port(s): 8090 (http) with context path ''
+Thu 02:02:33 10/02/2022 [main] [ INFO] [EurekaAutoServiceRegistration.java] - Updating port to 8090
+Thu 02:02:33 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090 - registration status: 204
+Thu 02:02:34 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Started MovieCruiserApplication in 18.606 seconds (JVM running for 20.247)
+Thu 02:04:00 10/02/2022 [http-nio-8090-exec-1] [ INFO] [DirectJDKLog.java] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+Thu 02:04:00 10/02/2022 [http-nio-8090-exec-1] [ INFO] [FrameworkServlet.java] - Initializing Servlet 'dispatcherServlet'
+Thu 02:04:00 10/02/2022 [http-nio-8090-exec-1] [ INFO] [FrameworkServlet.java] - Completed initialization in 3 ms
+Thu 02:04:00 10/02/2022 [http-nio-8090-exec-1] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:04:00 10/02/2022 [http-nio-8090-exec-1] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:07:31 10/02/2022 [AsyncResolver-bootstrap-executor-0] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 02:07:39 10/02/2022 [http-nio-8090-exec-3] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:07:39 10/02/2022 [http-nio-8090-exec-3] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:08:39 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - Start: Inside modifyMovie
+Thu 02:08:39 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - End:  modifyMovie
+Thu 02:21:04 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Starting MovieCruiserApplication using Java 1.8.0_202 on LTIN199495 with PID 20324 (C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service\target\classes started by 2068866 in C:\Users\2068866\eclipse-workspace\Microservice-final check\movie-service)
+Thu 02:21:04 10/02/2022 [main] [DEBUG] [StartupInfoLogger.java] - Running with Spring Boot v2.6.3, Spring v5.3.15
+Thu 02:21:04 10/02/2022 [main] [ INFO] [SpringApplication.java] - No active profile set, falling back to default profiles: default
+Thu 02:21:07 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Thu 02:21:07 10/02/2022 [main] [ INFO] [RepositoryConfigurationDelegate.java] - Finished Spring Data repository scanning in 424 ms. Found 1 JPA repository interfaces.
+Thu 02:21:08 10/02/2022 [main] [ INFO] [GenericScope.java] - BeanFactory id=49031f5c-6520-3365-b737-23624d821370
+Thu 02:21:09 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat initialized with port(s): 8090 (http)
+Thu 02:21:09 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing ProtocolHandler ["http-nio-8090"]
+Thu 02:21:09 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting service [Tomcat]
+Thu 02:21:09 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+Thu 02:21:10 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Thu 02:21:10 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Initializing Spring embedded WebApplicationContext
+Thu 02:21:10 10/02/2022 [main] [ INFO] [ServletWebServerApplicationContext.java] - Root WebApplicationContext: initialization completed in 5773 ms
+Thu 02:21:11 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Starting...
+Thu 02:21:11 10/02/2022 [main] [ INFO] [HikariDataSource.java] - HikariPool-1 - Start completed.
+Thu 02:21:11 10/02/2022 [main] [ INFO] [H2ConsoleAutoConfiguration.java] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:movie'
+Thu 02:21:12 10/02/2022 [main] [ INFO] [LogHelper.java] - HHH000204: Processing PersistenceUnitInfo [name: default]
+Thu 02:21:12 10/02/2022 [main] [ INFO] [Version.java] - HHH000412: Hibernate ORM core version 5.6.4.Final
+Thu 02:21:13 10/02/2022 [main] [ INFO] [JavaReflectionManager.java] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Thu 02:21:13 10/02/2022 [main] [ INFO] [Dialect.java] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Thu 02:21:15 10/02/2022 [main] [ INFO] [JtaPlatformInitiator.java] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Thu 02:21:15 10/02/2022 [main] [ INFO] [AbstractEntityManagerFactoryBean.java] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Thu 02:21:16 10/02/2022 [main] [ WARN] [JpaBaseConfiguration.java] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Thu 02:21:18 10/02/2022 [main] [ INFO] [DiscoveryClientOptionalArgsConfiguration.java] - Eureka HTTP Client uses RestTemplate.
+Thu 02:21:19 10/02/2022 [main] [ WARN] [LoadBalancerCacheAutoConfiguration.java] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+Thu 02:21:19 10/02/2022 [main] [ INFO] [EndpointLinksResolver.java] - Exposing 1 endpoint(s) beneath base path '/actuator'
+Thu 02:21:19 10/02/2022 [main] [ INFO] [InstanceInfoFactory.java] - Setting initial instance status as: STARTING
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Initializing Eureka in region us-east-1
+Thu 02:21:19 10/02/2022 [main] [ INFO] [ConfigClusterResolver.java] - Resolving eureka endpoints via configuration
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Disable delta property : false
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Single vip registry refresh property : null
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Force full registry fetch : false
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application is null : false
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Registered Applications size is zero : true
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Application version is -1: true
+Thu 02:21:19 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Getting all instance registry info from the eureka server
+Thu 02:21:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - The response status is 200
+Thu 02:21:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Starting heartbeat executor: renew interval is: 30
+Thu 02:21:21 10/02/2022 [main] [ INFO] [InstanceInfoReplicator.java] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+Thu 02:21:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Discovery Client initialized at timestamp 1644439881232 with initial instances count: 1
+Thu 02:21:21 10/02/2022 [main] [ INFO] [EurekaServiceRegistry.java] - Registering application MOVIE-SERVICE with eureka with status UP
+Thu 02:21:21 10/02/2022 [main] [ INFO] [DiscoveryClient.java] - Saw local status change event StatusChangeEvent [timestamp=1644439881240, current=UP, previous=STARTING]
+Thu 02:21:21 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090: registering service...
+Thu 02:21:21 10/02/2022 [main] [ INFO] [DirectJDKLog.java] - Starting ProtocolHandler ["http-nio-8090"]
+Thu 02:21:21 10/02/2022 [main] [ INFO] [TomcatWebServer.java] - Tomcat started on port(s): 8090 (http) with context path ''
+Thu 02:21:21 10/02/2022 [main] [ INFO] [EurekaAutoServiceRegistration.java] - Updating port to 8090
+Thu 02:21:21 10/02/2022 [DiscoveryClient-InstanceInfoReplicator-0] [ INFO] [DiscoveryClient.java] - DiscoveryClient_MOVIE-SERVICE/host.docker.internal:movie-service:8090 - registration status: 204
+Thu 02:21:22 10/02/2022 [main] [ INFO] [StartupInfoLogger.java] - Started MovieCruiserApplication in 18.948 seconds (JVM running for 20.479)
+Thu 02:23:47 10/02/2022 [http-nio-8090-exec-2] [ INFO] [DirectJDKLog.java] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+Thu 02:23:47 10/02/2022 [http-nio-8090-exec-2] [ INFO] [FrameworkServlet.java] - Initializing Servlet 'dispatcherServlet'
+Thu 02:23:47 10/02/2022 [http-nio-8090-exec-2] [ INFO] [FrameworkServlet.java] - Completed initialization in 2 ms
+Thu 02:23:47 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:23:47 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:23:57 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:23:57 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:24:03 10/02/2022 [http-nio-8090-exec-9] [ INFO] [MovieController.java] - Start: Inside getMovie
+Thu 02:24:03 10/02/2022 [http-nio-8090-exec-9] [ INFO] [MovieController.java] - End:  getMovie
+Thu 02:24:14 10/02/2022 [http-nio-8090-exec-4] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:24:14 10/02/2022 [http-nio-8090-exec-4] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:24:20 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - Start: Inside modifyMovie
+Thu 02:24:20 10/02/2022 [http-nio-8090-exec-2] [ INFO] [MovieController.java] - End:  modifyMovie
+Thu 02:24:27 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:24:27 10/02/2022 [http-nio-8090-exec-6] [ INFO] [MovieController.java] - End:  getAllMovies
+Thu 02:25:25 10/02/2022 [http-nio-8090-exec-7] [ INFO] [MovieController.java] - Start: Inside getAllMovies
+Thu 02:25:25 10/02/2022 [http-nio-8090-exec-7] [ INFO] [MovieController.java] - End:  getAllMovies
